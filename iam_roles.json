@@ -1,0 +1,26 @@
+{
+  "roles": [
+    {
+      "role_name": "DataProcessingRole",
+      "permissions": [
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:DeleteObject",
+        "ec2:DescribeInstances",
+        "ec2:TerminateInstances",
+        "rds:DeleteDBInstance",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ]
+    },
+    {
+      "role_name": "AnalyticsRole",
+      "permissions": [
+        "s3:GetObject",
+        "s3:ListBucket",
+        "ec2:DescribeInstances",
+        "rds:DescribeDBInstances"
+      ]
+    }
+  ]
+}
