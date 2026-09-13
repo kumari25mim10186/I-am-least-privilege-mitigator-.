@@ -1,0 +1,32 @@
+{
+  "services": [
+    {
+      "service": "DataPipeline",
+      "requires": [
+        "s3:GetObject",
+        "s3:PutObject"
+      ]
+    },
+    {
+      "service": "BackupService",
+      "requires": [
+        "ec2:DescribeInstances",
+        "ec2:TerminateInstances"
+      ]
+    },
+    {
+      "service": "AnalyticsService",
+      "requires": [
+        "s3:GetObject",
+        "s3:ListBucket"
+      ]
+    },
+    {
+      "service": "LoggingService",
+      "requires": [
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ]
+    }
+  ]
+}
