@@ -1,0 +1,44 @@
+{
+  "access_events": [
+    {
+      "role": "DataProcessingRole",
+      "permission": "s3:GetObject",
+      "count": 152
+    },
+    {
+      "role": "DataProcessingRole",
+      "permission": "s3:PutObject",
+      "count": 87
+    },
+    {
+      "role": "DataProcessingRole",
+      "permission": "s3:DeleteObject",
+      "count": 0
+    },
+    {
+      "role": "DataProcessingRole",
+      "permission": "ec2:DescribeInstances",
+      "count": 31
+    },
+    {
+      "role": "DataProcessingRole",
+      "permission": "ec2:TerminateInstances",
+      "count": 0
+    },
+    {
+      "role": "DataProcessingRole",
+      "permission": "rds:DeleteDBInstance",
+      "count": 0
+    },
+    {
+      "role": "DataProcessingRole",
+      "permission": "logs:CreateLogStream",
+      "count": 45
+    },
+    {
+      "role": "DataProcessingRole",
+      "permission": "logs:PutLogEvents",
+      "count": 93
+    }
+  ]
+}
