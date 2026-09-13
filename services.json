@@ -1,0 +1,8 @@
+{
+  "services": [
+    "DataPipeline",
+    "BackupService",
+    "AnalyticsService",
+    "LoggingService"
+  ]
+}
